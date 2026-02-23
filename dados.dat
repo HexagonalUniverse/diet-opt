@@ -139,4 +139,6 @@ param MinZinco      := 15;
 # Penalidade alimentícia
 # ----------------------
 
-param PenalidadeMaxima := 100;
+param PenalidadeMaxima  := 100;
+param VariedadeMinima   := 3;
+param VariedadeMaxima   := 11;
