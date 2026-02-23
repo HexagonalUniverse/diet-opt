@@ -57,7 +57,7 @@ param alpha;
 # ---------
 
 # Quantidade de cada comida.
-var X{ j in Comidas } >= 0;
+var X{ j in Comidas } >= 0, integer;
 
 # Energia (Calorias) E' = E^T X
 var cal;
@@ -91,17 +91,17 @@ param MaxProteinas;
 param MinFibras;
 
 # Sódio, Cálcio, Magnésio, Fósforo, Ferro e Zinco...
-var sodium;		s.t. sod_def:	sodium		= sum{ j in Comidas } Sodio[j]	* X[j];
-var calcium;	s.t. calc_def:	calcium		= sum{ j in Comidas } Calcio[j]	* X[j];
+var sodium;		s.t. sod_def:	sodium		= sum{ j in Comidas } Sodio[j]		* X[j];
+var calcium;	s.t. calc_def:	calcium		= sum{ j in Comidas } Calcio[j]		* X[j];
 var magnesium;	s.t. mag_def:	magnesium	= sum{ j in Comidas } Magnesio[j]	* X[j];
 var phosphorus;	s.t. phos_def:	phosphorus	= sum{ j in Comidas } Fosforo[j]	* X[j];
-var iron;	s.t. iron_def:		iron		= sum{ j in Comidas } Ferro[j]	* X[j];
-var zinc;	s.t. zinc_def:		zinc		= sum{ j in Comidas } Zinco[j]	* X[j];
+var iron;	s.t. iron_def:		iron		= sum{ j in Comidas } Ferro[j]		* X[j];
+var zinc;	s.t. zinc_def:		zinc		= sum{ j in Comidas } Zinco[j]		* X[j];
 
 # Penalidade.
-var penalty;
-s.t. penalty_def:
-	penalty = sum{ j in Comidas } Penalidade[j] * X[j];
+var penalty { j in Comidas };
+s.t. penalty_def { j in Comidas }:
+	penalty[j] = Penalidade[j] * X[j];
 
 
 #
@@ -134,8 +134,8 @@ subject to rest_MinFerro:		iron		>= MinFerro;
 subject to rest_MinZinco:		zinc		>= MinZinco;
 
 # Restrição de penalidade de comida.
-subject to rest_Penalidade:
-	penalty <= PenalidadeMaxima;
+subject to rest_Penalidade { j in Comidas }:
+	penalty[j] <= PenalidadeMaxima;
 
 
 solve;

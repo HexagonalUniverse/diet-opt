@@ -56,7 +56,7 @@ param alpha;
 # ---------
 
 # Quantidade de cada comida.
-var X{ j in Comidas } >= 0;
+var X{ j in Comidas } >= 0, integer;
 
 # Energia (Calorias) E' = E^T X
 var cal;
