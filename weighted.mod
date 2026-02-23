@@ -47,6 +47,10 @@ param MinZinco;
 param Penalidade{ j in Comidas } integer;
 param PenalidadeMaxima;
 
+param VariedadeMinima;
+param VariedadeMaxima;
+
+
 # Percentual carbo-lipídeos.
 param alpha;
 
@@ -99,9 +103,17 @@ var iron;	s.t. iron_def:		iron		= sum{ j in Comidas } Ferro[j]		* X[j];
 var zinc;	s.t. zinc_def:		zinc		= sum{ j in Comidas } Zinco[j]		* X[j];
 
 # Penalidade.
-var penalty { j in Comidas };
-s.t. penalty_def { j in Comidas }:
-	penalty[j] = Penalidade[j] * X[j];
+var penalty;
+s.t. penalty_def:
+	penalty = sum { j in Comidas} Penalidade[j] * X[j];
+
+# Variadade alimentícia.
+var Y { j in Comidas }, binary;
+s.t. variedade_def_upper { j in Comidas }:
+	X[j] <= 1e6 * Y[j];
+	
+s.t. variedade_def_lower { j in Comidas }:
+	X[j] >= Y[j];
 
 
 #
@@ -134,8 +146,15 @@ subject to rest_MinFerro:		iron		>= MinFerro;
 subject to rest_MinZinco:		zinc		>= MinZinco;
 
 # Restrição de penalidade de comida.
-subject to rest_Penalidade { j in Comidas }:
-	penalty[j] <= PenalidadeMaxima;
+subject to rest_Penalidade:
+	penalty <= PenalidadeMaxima;
+
+subject to rest_Variedade_superior:
+	sum { j in Comidas } Y[j] >= VariedadeMinima;
+
+subject to rest_Variedade_inferior:
+	sum { j in Comidas } Y[j] <= VariedadeMaxima;
+
 
 
 solve;
@@ -143,9 +162,4 @@ display X;
 display carb, lip, F;
 
 
-end;   0.000000000e+00 inf =   4.871e+02 (4)
-
-
-
-
-
+end;   0.000000000e+00 inf =   4.871e+03 (4)
