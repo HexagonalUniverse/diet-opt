@@ -237,33 +237,14 @@ param Zinco :=
 16  1.6;
 
 
-param Penalidade :=
-1   5       # Maça
-2   0       # Banana Maça
-3   5       # Macarrão c/ molho bolonhesa
-4   0       # Iogurte Natual
-5   2       # Suco Laranja c/ açucar 
-6   10      # Refeição 1
-7   10      # Refeição 2
-8   10      # Feijoada
-9   0       # Batata Doce cozida
-10  50      # Cheese burguer
-11  20      # Refrigerante Regular
-12  5       # Pão Francês + requeijão	
-13  10      # Pastel de Carne Frito
-14  10      # Pastel de Queijo Frito
-15  0       # Refeição 3
-16  0;      # Sanduíche Pão de Forma, peito de peru e queijo minas
-
-
 
 # ---------------------- #
 # Penalidade alimentícia #
 # ---------------------- #
 
 param PenalidadeMaxima  := 100;
-param VariedadeMinima   := 3;
-param VariedadeMaxima   := 7;
+param VariedadeMinima   := 0;
+param VariedadeMaxima   := 16;
 param RepeticaoMaxima   := 4;
 
 

@@ -112,7 +112,7 @@ s.t. penalty_def:
 #
 #
 
-param F_estrela := 250;
+param F_estrela := 442;
 
 
 

@@ -4,22 +4,24 @@
 #				Victor Xavier Costa
 #	Data: 19/02/2026
 #	
-#	Segundo conjunto de dados.
+#	Terceiro conjunto de dados.
 #	--------------------------------------------------------------------------------------------------------------------------
 
-# Indivíduo 2.
-# ------------
+# -------------------------
+# Parâmetros por indivíduos
+# -------------------------
 
-param MinCarbo      := 250;
-param MaxLip        := 120;
+# Indivíduo muito ativo (atleta)
+# Pessoa com alta demanda energética diária (treinos intensos).
 
-param MinCalorias   := 2000;
-param MaxCalorias   := 2800;
+param MinCarbo      := 400;
+param MaxLip        := 150;
 
-# Penalidades
-# -----------
+param MinCalorias   := 3000;
+param MaxCalorias   := 3800;
 
-/* # Dia 1
+/*
+# Dia 1
 param Penalidade :=
 1   0       # Maça
 2   0       # Banana Maça
@@ -42,14 +44,14 @@ param Penalidade :=
 /* # Dia 2
 param Penalidade :=
 1   10      # Maça
-2   10      # Banana Maça
-3   0       # Macarrão c/ molho bolonhesa
+2   0       # Banana Maça
+3   5       # Macarrão c/ molho bolonhesa
 4   10      # Iogurte Natual
-5   0       # Suco Laranja c/ açucar 
+5   5       # Suco Laranja c/ açucar 
 6   0       # Refeição 1
 7   0       # Refeição 2
-8   0       # Refeição 3
-9   0       # Feijoada
+8   5       # Refeição 3
+9   10      # Feijoada
 10  0       # Batata Doce cozida
 11  0       # Cheese burguer
 12  0       # Refrigerante Regular
@@ -61,19 +63,19 @@ param Penalidade :=
 
 # Dia 3
 param Penalidade :=
-1   20      # Maça
-2   20      # Banana Maça
-3   0       # Macarrão c/ molho bolonhesa
-4   5       # Iogurte Natual
-5   0       # Suco Laranja c/ açucar 
+1   5       # Maça
+2   10      # Banana Maça
+3   5       # Macarrão c/ molho bolonhesa
+4   10      # Iogurte Natual
+5   5       # Suco Laranja c/ açucar 
 6   0       # Refeição 1
 7   0       # Refeição 2
-8   0       # Refeição 3
-9   0       # Feijoada
-10  0       # Batata Doce cozida
-11  0       # Cheese burguer
-12  0       # Refrigerante Regular
-13  0       # Pão Francês + requeijão
-14  0       # Pastel de Carne Frito
-15  0       # Pastel de Queijo Frito
+8   5       # Feijoada
+9   0       # Batata Doce cozida
+10  0       # Cheese burguer
+11  0       # Refrigerante Regular
+12  0       # Pão Francês + requeijão	
+13  0       # Pastel de Carne Frito
+14  0       # Pastel de Queijo Frito
+15  0       # Refeição 3
 16  0;      # Sanduíche Pão de Forma, peito de peru e queijo minas

@@ -1,0 +1,40 @@
+X[1].val = 0
+X[2].val = 0
+X[3].val = 5
+X[4].val = 12
+X[5].val = 0
+X[6].val = 0
+X[7].val = 1
+X[8].val = 0
+X[9].val = 5
+X[10].val = 0
+X[11].val = 0
+X[12].val = 0
+X[13].val = 0
+X[14].val = 0
+X[15].val = 0
+X[16].val = 0
+Display statement at line 155
+carb.val = 268.12
+lip.val = 80.61
+
+
+X[1].val = 0
+X[2].val = 0
+X[3].val = 5
+X[4].val = 12
+X[5].val = 0
+X[6].val = 0
+X[7].val = 1
+X[8].val = 0
+X[9].val = 5
+X[10].val = 0
+X[11].val = 0
+X[12].val = 0
+X[13].val = 0
+X[14].val = 0
+X[15].val = 0
+X[16].val = 0
+Display statement at line 155
+carb.val = 268.12
+lip.val = 80.61
