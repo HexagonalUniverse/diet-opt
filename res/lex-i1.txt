@@ -1,42 +1,41 @@
-X[1].val = 1
-X[2].val = 6
+X[1].val = 4
+X[2].val = 4
 X[3].val = 0
-X[4].val = 6
-X[5].val = 1
+X[4].val = 4
+X[5].val = 2
 X[6].val = 1
 X[7].val = 2
-X[8].val = 1
-X[9].val = 2
-X[10].val = 1
+X[8].val = 0
+X[9].val = 1
+X[10].val = 0
 X[11].val = 0
 X[12].val = 0
 X[13].val = 0
 X[14].val = 0
 X[15].val = 0
-X[16].val = 0
-Display statement at line 155
-cal.val = 2223
-carb.val = 350.01
-lip.val = 58.23
+X[16].val = 1
+Display statement at line 170
+cal.val = 2265
+carb.val = 376.94
+lip.val = 52.69
 
-
-X[1].val = 1
-X[2].val = 6
+X[1].val = 4
+X[2].val = 4
 X[3].val = 0
-X[4].val = 6
-X[5].val = 1
+X[4].val = 4
+X[5].val = 2
 X[6].val = 1
 X[7].val = 2
-X[8].val = 1
-X[9].val = 2
-X[10].val = 1
+X[8].val = 0
+X[9].val = 1
+X[10].val = 0
 X[11].val = 0
 X[12].val = 0
 X[13].val = 0
 X[14].val = 0
 X[15].val = 0
-X[16].val = 0
-Display statement at line 155
-cal.val = 2223
-carb.val = 350.01
-lip.val = 58.23
+X[16].val = 1
+Display statement at line 170
+cal.val = 2265
+carb.val = 376.94
+lip.val = 52.69

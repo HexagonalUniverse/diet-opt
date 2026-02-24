@@ -107,12 +107,19 @@ var penalty;
 s.t. penalty_def:
 	penalty = sum{ j in Comidas } Penalidade[j] * X[j];
 
+# Variadade alimentícia.
+var Y { j in Comidas }, binary;
+s.t. variedade_def_upper { j in Comidas }:
+	X[j] <= 1e6 * Y[j];
+	
+s.t. variedade_def_lower { j in Comidas }:
+	X[j] >= Y[j];
 
 #
 #
 #
 
-param F_estrela := 1e6;
+param F_estrela := 376.94;
 
 
 
@@ -121,7 +128,7 @@ param F_estrela := 1e6;
 # ---------------------
 
 minimize F:
-	carb; # carb, lip
+	lip; # carb, lip
 
 subject to rest_MinCalorias:	cal		>= MinCalorias;
 subject to rest_MaxCalorias:	cal		<= MaxCalorias;
@@ -145,6 +152,14 @@ subject to rest_MinZinco:		zinc		>= MinZinco;
 subject to rest_Penalidade:
 	penalty <= PenalidadeMaxima;
 
+subject to rest_Variedade_superior:
+	sum { j in Comidas } Y[j] >= VariedadeMinima;
+
+subject to rest_Variedade_inferior:
+	sum { j in Comidas } Y[j] <= VariedadeMaxima;
+
+subject to rest_Repeticao { j in Comidas }:
+	X[j] <= RepeticaoMaxima;
 
 subject to improvement:
 	carb <= F_estrela;
