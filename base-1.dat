@@ -4,20 +4,20 @@
 #				Victor Xavier Costa
 #	Data: 19/02/2026
 #	
-#	Primeiro conjunto de dados.
+#	Segundo conjunto base de dados.
 #	--------------------------------------------------------------------------------------------------------------------------
 
-# -------------------------
-# Configurações dos modelos
-# -------------------------
+# ------------------------- # 
+# Configurações dos modelos # 
+# ------------------------- # 
 
 param alpha := 0.6;
 
 
 
-# ------------------------
-# Informação dos alimentos
-# ------------------------
+# ------------------------ #
+# Informação dos alimentos #
+# ------------------------ #
 
 param N := 5;
 
@@ -99,46 +99,36 @@ param Zinco :=
 5   4;
 
 param Penalidade :=
-1   2
+1   1
 2   1
-3   4
+3   1
 4   1
-5   5 ;
+5   1;
 
 
 
-# -------------------------
-# Parâmetros por indivíduos
-# -------------------------
-
-param MinCarbo      := 250;
-param MaxLip        := 120;
-param MinCalorias   := 2000;
-param MaxCalorias   := 2800;
-
-
-
-# ---------------
-# Semi-constantes
-# ---------------
-
-param MinProteinas  := 28.4;
-param MaxProteinas  := 200;
-param MinFibras     := 30.0;
-
-param MaxSodio      := 2000;
-param MinCalcio     := 850;
-param MinMagnesio   := 400;
-param MinFosforo    := 700;
-param MinFerro      := 18;
-param MinZinco      := 15;
-
-
-
-# ----------------------
-# Penalidade alimentícia
-# ----------------------
+# ---------------------- #
+# Penalidade alimentícia #
+# ---------------------- #
 
 param PenalidadeMaxima  := 100;
-param VariedadeMinima   := 3;
-param VariedadeMaxima   := 11;
+param VariedadeMinima   := 1;
+param VariedadeMaxima   := 5;
+param RepeticaoMaxima   := 10;
+
+
+
+# --------------- #
+# Semi-constantes #
+# --------------- #
+
+param MinProteinas      := 28.4;
+param MaxProteinas      := 200;
+param MinFibras         := 30.0;
+
+param MaxSodio          := 2000;
+param MinCalcio         := 850;
+param MinMagnesio       := 400;
+param MinFosforo        := 700;
+param MinFerro          := 18;
+param MinZinco          := 15;

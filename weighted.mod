@@ -50,6 +50,7 @@ param PenalidadeMaxima;
 param VariedadeMinima;
 param VariedadeMaxima;
 
+param RepeticaoMaxima;
 
 # Percentual carbo-lipídeos.
 param alpha;
@@ -115,7 +116,6 @@ s.t. variedade_def_upper { j in Comidas }:
 s.t. variedade_def_lower { j in Comidas }:
 	X[j] >= Y[j];
 
-
 #
 #
 #
@@ -145,7 +145,7 @@ subject to rest_MinFosforo:		phosphorus	>= MinFosforo;
 subject to rest_MinFerro:		iron		>= MinFerro;
 subject to rest_MinZinco:		zinc		>= MinZinco;
 
-# Restrição de penalidade de comida.
+# Restrição de penalidade de comcida.
 subject to rest_Penalidade:
 	penalty <= PenalidadeMaxima;
 
@@ -155,11 +155,18 @@ subject to rest_Variedade_superior:
 subject to rest_Variedade_inferior:
 	sum { j in Comidas } Y[j] <= VariedadeMaxima;
 
+subject to rest_Repeticao { j in Comidas }:
+	X[j] <= RepeticaoMaxima;
+
 
 
 solve;
-display X;
-display carb, lip, F;
+display	X,
+		cal,
+		carb, 
+		lip,
+		penalty,
+		F;
 
 
 end;   0.000000000e+00 inf =   4.871e+03 (4)

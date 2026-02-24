@@ -47,6 +47,11 @@ param MinZinco;
 param Penalidade{ j in Comidas } integer;
 param PenalidadeMaxima;
 
+param VariedadeMinima;
+param VariedadeMaxima;
+
+param RepeticaoMaxima;
+
 # Percentual carbo-lipídeos.
 param alpha;
 
