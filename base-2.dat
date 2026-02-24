@@ -21,22 +21,22 @@ param alpha := 0.6;
 
 param N := 16;
 
-# 1.  Maça - Unidade (130g)
-# 2.  Banana Maça - Unidade (65 g)
-# 3.  Macarrão c/ molho bolonhesa - (100g)
-# 4.  Iogurte Natual - (100g)
-# 5.  Suco Laranja c/ açucar - ()
-# 6.  Refeição 1 - (porção 260g)
-# 7.  Refeição 2 - (porção 200g)
-# 8.  Feijoada - (porção 100g)
-# 9.  Batata Doce cozida
-# 10. Hambúrguer (cheese burguer) - ()
-# 11. Refrigerante Regular
-# 12. Pão Francês + requeijão	
-# 13. Pastel de Carne Frito
-# 14. Pastel de Queijo Frito
-# 15. Refeição 3
-# 16. Sanduíche Pão de Forma, peito de peru e queijo minas
+# 1.  Maça - (unidade 130g)
+# 2.  Banana Maça - (unidade 65g)
+# 3.  Macarrão c/ molho bolonhesa - (porção 100g)
+# 4.  Iogurte Natual - (porção 100g)
+# 5.  Suco Laranja c/ açucar - (240 ml)
+# 6.  Refeição 1 : 80g de Arroz polido, 60g feijão carioca, 60g de batata inglesa c/ óleo de soja, c/sal. - (porção 260g)
+# 7.  Refeição 2 : 80g de Arroz polido, 60 g de feijão carioca, 60g de carne bovina refogada e 60g de quibebe c/ óleo de soja, c/ sal. - (porção 260g)
+# 8.  Refeição 3 : Salada, macarrão, trigo, c/ brocolis, tomate, peito de peru c/ azeite, c/ vinage e s/ sal. - (porção 50g)
+# 9.  Feijoada - (porção 100g)
+# 10. Batata Doce cozida - (porção 80g)
+# 11. Hambúrguer (cheese burguer) - (unidade 220g)
+# 12. Refrigerante Regular - (240m)
+# 13. Pão Francês + requeijão - (unidade 65g)
+# 14. Pastel de Carne Frito - (unidade 50g)
+# 15. Pastel de Queijo Frito - (unidade 50g)
+# 16. Sanduíche Pão de Forma, peito de peru e queijo minas - (unidade 110g)
 
 param Calorias :=
 1   83.0
@@ -46,14 +46,14 @@ param Calorias :=
 5   104.0
 6   206.0
 7   322.0
-8   131.0
-9   111.0
-10  272.0
-11  93.0
-12  192.0
-13  197.0
-14  214.0
-15  57.0
+8   57.0
+9   131.0
+10  111.0
+11  272.0
+12  93.0
+13  192.0
+14  197.0
+15  214.0
 16  240.0;
 
 param Carboidratos :=
@@ -64,14 +64,14 @@ param Carboidratos :=
 5   25.3
 6   39.4
 7   39.5
-8   11.8
-9   22.4
-10  30.5
-11  23.4
-12  31.3
-13  21.9
-14  23.6
-15  8.85
+8   8.85
+9   11.8
+10  22.4
+11  30.5
+12  23.4
+13  31.3
+14  21.9
+15  23.6
 16  27.5;
 
 param Lipideos :=
@@ -82,14 +82,14 @@ param Lipideos :=
 5   0.06
 6   4.22
 7   10.6
-8   6.23
-9   2.55
-10  11.1
-11  0.0
-12  4.89
-13  10.1
-14  11.3
-15  1.44
+8   1.44
+9   6.23
+10  2.55
+11  11.1
+12  0.0
+13  4.89
+14  10.1
+15  11.3
 16  7.92;
 
 param Proteinas :=
@@ -100,14 +100,14 @@ param Proteinas :=
 5   0.67
 6   5.48
 7   21.3
-8   9.56
-9   0.83
-10  13.3
-11  0.0
-12  6.4
-13  5.05
-14  4.36
-15  2.47
+8   2.47
+9   9.56
+10  0.83
+11  13.3
+12  0.0
+13  6.4
+14  5.05
+15  4.36
 16  15.4;
 
 param Fibras :=
@@ -118,14 +118,14 @@ param Fibras :=
 5   0.0
 6   5.96
 7   6.68
-8   5.15
-9   2.66
-10  1.34
-11  0.0
-12  1.3
-13  0.49
-14  0.47
-15  0.57
+8   0.57
+9   5.15
+10  2.66
+11  1.34
+12  0.0
+13  1.3
+14  0.49
+15  0.47
 16  1.34;
 
 param Sodio :=
@@ -136,14 +136,14 @@ param Sodio :=
 5   2.29
 6   304
 7   447
-8   278
-9   191
-10  676
-11  19.5
-12  424
-13  519
-14  410
-15  58.5
+8   58.5
+9   278
+10   191
+11  676
+12  19.5
+13  424
+14  519
+15  410
 16  727;
 
 param Calcio :=
@@ -154,14 +154,14 @@ param Calcio :=
 5   7.08
 6   24.6
 7   30.7
-8   32.4
-9   21.0
-10  185
-11  3.82
-12  49.7
-13  6.28
-14  63.1
-15  6.07
+8   6.07
+9   32.4
+10  21.0
+11  185
+12  3.82
+13  49.7
+14  6.28
+15  63.1
 16  235;
 
 param Magnesio :=
@@ -172,14 +172,14 @@ param Magnesio :=
 5   4.72
 6   1.02
 7   62.4
-8   31.9
-9   13.6
-10  31.7
-11  0.84
-12  14.1
-13  7.22
-14  7.37
-15  3.08
+8   3.08
+9   31.9
+10  13.6
+11  31.7
+12  0.84
+13  14.1
+14  7.22
+15  7.37
 16  38.1;
 
 param Fosforo :=
@@ -190,14 +190,14 @@ param Fosforo :=
 5   12.2
 6   48.8
 7   213.0
-8   105.0
-9   18.8
-10  220.0
-11  08.78
-12  117.0
-13  45.0
-14  61.9
-15  38.2
+8   38.2
+9   105.0
+10   18.8
+11  220.0
+12  8.78
+13  117.0
+14  45.0
+15  61.9
 16  227.0;
 
 param Ferro :=
@@ -208,14 +208,14 @@ param Ferro :=
 5   0.02
 6   87.8
 7   2.6
-8   1.35
-9   0.23
-10  2.69
-11  0.00
-12  2.18
-13  1.75
-14  1.67
-15  0.19
+8   0.19
+9   1.35
+10  0.23
+11  2.69
+12  0.00
+13  2.18
+14  1.75
+15  1.67
 16  2.28;
 
 param Zinco :=
@@ -226,14 +226,14 @@ param Zinco :=
 5   0.0
 6   0.96
 7   5.59
-8   0.83
-9   0.15
-10  2.63
-11  0.0
-12  0.62
-13  0.58
-14  0.38
-15  0.23
+8   0.23
+9   0.83
+10  0.15
+11  2.63
+12  0.0
+13  0.62
+14  0.58
+15  0.38
 16  1.6;
 
 
@@ -283,3 +283,4 @@ param MinFosforo        := 700;
 param MinFerro          := 18;
 param MinZinco          := 15;
 
+end;

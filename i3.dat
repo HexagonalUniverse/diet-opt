@@ -1,0 +1,22 @@
+#	--------------------------------------------------------------------------------------------------------------------------
+#	Introdução à Otimização - BCC 342, 25.2
+#	Autores:	Hebert Luiz Madeira Pascoal, 
+#				Victor Xavier Costa
+#	Data: 19/02/2026
+#	
+#	Conjunto de dados do indivíduo 3.
+#	--------------------------------------------------------------------------------------------------------------------------
+
+# -------------------------
+# Parâmetros por indivíduos
+# -------------------------
+
+# Indivíduo muito ativo (atleta)
+# Pessoa com alta demanda energética diária (treinos intensos).
+
+param MinCarbo      := 400;
+param MaxLip        := 150;
+param MinCalorias   := 3000;
+param MaxCalorias   := 3800;
+
+end;

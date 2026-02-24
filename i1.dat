@@ -1,0 +1,19 @@
+#	--------------------------------------------------------------------------------------------------------------------------
+#	Introdução à Otimização - BCC 342, 25.2
+#	Autores:	Hebert Luiz Madeira Pascoal, 
+#				Victor Xavier Costa
+#	Data: 19/02/2026
+#	
+#	Conjunto de dados do indivíduo 1.
+#	--------------------------------------------------------------------------------------------------------------------------
+
+# -------------------------
+# Parâmetros por indivíduos
+# -------------------------
+
+param MinCarbo      := 250;
+param MaxLip        := 120;
+param MinCalorias   := 2000;
+param MaxCalorias   := 2800;
+
+end;

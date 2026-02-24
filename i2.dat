@@ -1,0 +1,22 @@
+#	--------------------------------------------------------------------------------------------------------------------------
+#	Introdução à Otimização - BCC 342, 25.2
+#	Autores:	Hebert Luiz Madeira Pascoal, 
+#				Victor Xavier Costa
+#	Data: 19/02/2026
+#	
+#	Conjunto de dados do indivíduo 2.
+#	--------------------------------------------------------------------------------------------------------------------------
+
+# -------------------------
+# Parâmetros por indivíduos
+# -------------------------
+
+# Indivíduo sedentário (controle de peso)
+# Pessoa com baixa atividade física, foco em manutenção ou leve déficit calórico.
+
+param MinCarbo      := 180;
+param MaxLip        := 70;
+param MinCalorias   := 1600;
+param MaxCalorias   := 2000;
+
+end;
