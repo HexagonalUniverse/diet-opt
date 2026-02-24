@@ -112,7 +112,7 @@ s.t. penalty_def:
 #
 #
 
-param F_estrela := 442;
+param F_estrela := 1e6;
 
 
 
@@ -121,7 +121,7 @@ param F_estrela := 442;
 # ---------------------
 
 minimize F:
-	lip; # carb, lip
+	carb; # carb, lip
 
 subject to rest_MinCalorias:	cal		>= MinCalorias;
 subject to rest_MaxCalorias:	cal		<= MaxCalorias;
@@ -152,7 +152,7 @@ subject to improvement:
 
 solve;
 display X;
-display carb, lip;
+display cal, carb, lip;
 
 
 end;   0.000000000e+00 inf =   4.871e+02 (4)

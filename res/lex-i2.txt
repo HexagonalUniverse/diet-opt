@@ -15,6 +15,7 @@ X[14].val = 0
 X[15].val = 0
 X[16].val = 0
 Display statement at line 155
+cal.val = 2264
 carb.val = 268.12
 lip.val = 80.61
 
@@ -36,5 +37,6 @@ X[14].val = 0
 X[15].val = 0
 X[16].val = 0
 Display statement at line 155
+cal.val = 2264
 carb.val = 268.12
 lip.val = 80.61
